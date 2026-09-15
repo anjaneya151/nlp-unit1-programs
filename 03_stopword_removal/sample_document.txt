@@ -1,0 +1,8 @@
+Natural Language Processing is a field of Artificial Intelligence that gives
+machines the ability to read, understand and derive meaning from human
+languages. It is a discipline that focuses on the interaction between data
+science and human language, and it is scaling to lots of industries today.
+Today, NLP is booming thanks to the huge improvements in the access to data
+and the increase in computational power, which allow students and researchers
+to achieve meaningful results in areas such as healthcare, media, finance and
+human resources.
