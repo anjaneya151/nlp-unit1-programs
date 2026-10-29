@@ -1,4 +1,4 @@
-# NLP Lab Programs – All 32 Programs (CO1, CO2 & CO3)
+# Natural Language Processing Lab – 32 Programs (CO1, CO2 & CO3)
 
 Natural Language Processing (NLP) laboratory programs implemented in Python using **NLTK**, **spaCy**, **scikit-learn**, **Gensim**, **TextBlob**, **VADER**, **TensorFlow/Keras** and **Hugging Face Transformers**.
 
@@ -14,7 +14,9 @@ Natural Language Processing (NLP) laboratory programs implemented in Python usin
 
 ### CO1 – Text Pre-processing and Linguistic Analysis
 
-| S. No. | Program | Folder | File | CO |
+All CO1 programs are inside the [`CO1/`](CO1) folder.
+
+| S. No. | Program | Folder (inside `CO1/`) | File | CO |
 |:------:|---------|--------|------|:--:|
 | 1 | Tokenization of Sentences and Words using NLTK and spaCy | `01_tokenization` | `tokenization_nltk_spacy.py` | CO1 |
 | 2 | Stemming and Lemmatization on Sample Text | `02_stemming_lemmatization` | `stemming_lemmatization.py` | CO1 |
@@ -68,20 +70,21 @@ All CO3 programs are inside the [`CO3/`](CO3) folder.
 ## Repository structure
 
 ```text
-nlp-unit1-programs/
-├── 01_tokenization/
-│   └── tokenization_nltk_spacy.py
-├── 02_stemming_lemmatization/
-│   └── stemming_lemmatization.py
-├── 03_stopword_removal/
-│   ├── sample_document.txt
-│   └── stopword_removal.py
-├── 04_pos_tagging/
-│   └── pos_tagging_hmm_nltk.py
-├── 05_parsing_chunking/
-│   └── parsing_chunking.py
-├── 06_named_entity_recognition/
-│   └── ner_spacy.py
+natural-language-processing-lab/
+├── CO1/
+│   ├── 01_tokenization/
+│   │   └── tokenization_nltk_spacy.py
+│   ├── 02_stemming_lemmatization/
+│   │   └── stemming_lemmatization.py
+│   ├── 03_stopword_removal/
+│   │   ├── sample_document.txt
+│   │   └── stopword_removal.py
+│   ├── 04_pos_tagging/
+│   │   └── pos_tagging_hmm_nltk.py
+│   ├── 05_parsing_chunking/
+│   │   └── parsing_chunking.py
+│   └── 06_named_entity_recognition/
+│       └── ner_spacy.py
 ├── CO2/
 │   ├── 07_coreference_resolution/
 │   │   ├── coreference_resolution.py
@@ -161,7 +164,7 @@ python -m spacy download en_core_web_sm
 ## Running a program
 
 ```bash
-python 01_tokenization/tokenization_nltk_spacy.py
+python CO1/01_tokenization/tokenization_nltk_spacy.py
 python CO2/09_tfidf/tfidf.py
 python CO2/21_information_retrieval/information_retrieval.py --interactive
 python CO2/07_coreference_resolution/coreference_resolution.py
