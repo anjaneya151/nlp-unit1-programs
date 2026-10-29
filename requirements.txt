@@ -11,3 +11,17 @@ gensim>=4.3
 POT>=0.9            # needed by gensim for Word Mover's Distance (Program 14)
 textblob>=0.17
 vaderSentiment>=3.3
+
+# CO2 deep learning (Programs 22-23)
+tensorflow>=2.15
+
+# CO3 transformers (Programs 24-30)
+torch
+transformers
+datasets
+sentencepiece
+sacremoses
+accelerate
+
+# Optional neural coreference (Program 7)
+# fastcoref

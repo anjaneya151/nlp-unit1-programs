@@ -1,0 +1,24 @@
+Learned transition matrix (rows: from CONT/NEW, cols: to CONT/NEW):
+ [[0.6 0.4]
+ [1.  0. ]]
+
+Test stream: 79 pages, 25 documents
+Baseline (Naive Bayes only)    precision=1.000 recall=0.280 F1=0.438
+Hybrid (NB + HMM + FSM)        precision=0.957 recall=0.880 F1=0.917
+
+First 15 pages  (true | hybrid):
+  page 01: NEW  | NEW 
+  page 02: CONT | CONT
+  page 03: NEW  | NEW 
+  page 04: CONT | CONT
+  page 05: CONT | CONT
+  page 06: NEW  | NEW 
+  page 07: CONT | CONT
+  page 08: CONT | CONT
+  page 09: CONT | CONT
+  page 10: NEW  | NEW 
+  page 11: CONT | CONT
+  page 12: NEW  | NEW 
+  page 13: CONT | CONT
+  page 14: CONT | CONT
+  page 15: CONT | CONT

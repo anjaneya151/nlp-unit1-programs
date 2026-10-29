@@ -1,0 +1,18 @@
+Natural language processing is a field of artificial intelligence that helps computers understand human language.
+Natural language processing includes tasks like tokenization, tagging, parsing, translation and summarization.
+Machine learning models learn patterns from data instead of following hand-written rules.
+Machine learning models need training data, a loss function and an optimizer to improve over time.
+Attention mechanisms let a model focus on the most relevant words when reading a sentence.
+Attention mechanisms are the core idea behind the transformer architecture.
+Transformers process all words of a sentence in parallel using self-attention.
+Word embeddings represent words as dense vectors so that similar words are close together.
+BERT is a bidirectional transformer that is pre-trained on large text corpora and fine-tuned for downstream tasks.
+GPT-2 is an autoregressive language model that predicts the next word given the previous words.
+Fine-tuning a pre-trained model on a small custom dataset is faster than training from scratch.
+Text classification assigns a label such as spam, positive or negative to a piece of text.
+Named entity recognition finds people, places and organizations mentioned in text.
+Machine translation converts text from one language to another using sequence to sequence models.
+Text summarization produces a short version of a document while keeping the key information.
+Chatbots use language models to generate replies in a conversation with a user.
+Natural language processing is used in search engines, voice assistants and customer support systems.
+Machine learning models are evaluated using metrics like accuracy, precision, recall and F1 score.

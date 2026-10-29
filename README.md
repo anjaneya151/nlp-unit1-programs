@@ -1,10 +1,12 @@
-# NLP Lab Programs – CO1 & CO2
+# NLP Lab Programs – All 32 Programs (CO1, CO2 & CO3)
 
-Natural Language Processing (NLP) laboratory programs implemented in Python using **NLTK**, **spaCy**, **scikit-learn**, **Gensim**, **TextBlob** and **VADER**.
+Natural Language Processing (NLP) laboratory programs implemented in Python using **NLTK**, **spaCy**, **scikit-learn**, **Gensim**, **TextBlob**, **VADER**, **TensorFlow/Keras** and **Hugging Face Transformers**.
+
+**Institute:** Noida Institute of Engineering and Technology (NIET), Dept. of Artificial Intelligence
 
 **Student:** Anjaneya Mallick
 **GitHub:** [@anjaneya151](https://github.com/anjaneya151)
-**Course Outcomes covered:** CO1 (Programs 1–6) and CO2 (Programs 8–21, updated as the course progresses)
+**Course Outcomes covered:** CO1 (Programs 1–6), CO2 (Programs 7–23), CO3 (Programs 24–32) — **all 32 programs complete**
 
 ---
 
@@ -27,6 +29,7 @@ All CO2 programs are inside the [`CO2/`](CO2) folder.
 
 | S. No. | Program | Folder (inside `CO2/`) | File | CO |
 |:------:|---------|------------------------|------|:--:|
+| 7 | Coreference Resolution (neuralcoref-style; fastcoref + rule-based) | `07_coreference_resolution` | `coreference_resolution.py` | CO2 |
 | 8 | Bag-of-Words (BoW) Vectorization and Representation | `08_bag_of_words` | `bag_of_words.py` | CO2 |
 | 9 | TF-IDF Implementation and Comparison with BoW | `09_tfidf` | `tfidf.py` | CO2 |
 | 10 | N-Gram Model (Uni-, Bi-, Tri-gram) Generation from Corpus | `10_ngram_model` | `ngram_model.py` | CO2 |
@@ -41,6 +44,24 @@ All CO2 programs are inside the [`CO2/`](CO2) folder.
 | 19 | Opinion Mining on Product / Service Reviews Dataset | `19_opinion_mining` | `opinion_mining.py` | CO2 |
 | 20 | Information Extraction (IE) from Structured / Unstructured Documents | `20_information_extraction` | `information_extraction.py` | CO2 |
 | 21 | Information Retrieval System with Ranking using TF-IDF | `21_information_retrieval` | `information_retrieval.py` | CO2 |
+| 22 | Sequence Classification using RNN/LSTM (Keras/TensorFlow) | `22_lstm_sequence_classification` | `lstm_classifier.py` | CO2 |
+| 23 | Implementing Attention Mechanism (Basic Custom Model) | `23_attention_mechanism` | `attention_model.py` | CO2 |
+
+### CO3 – Transformers and Advanced Applications
+
+All CO3 programs are inside the [`CO3/`](CO3) folder.
+
+| S. No. | Program | Folder (inside `CO3/`) | File | CO |
+|:------:|---------|------------------------|------|:--:|
+| 24 | Fine-Tuning BERT for Text Classification using Hugging Face | `24_bert_finetuning` | `bert_finetune.py` | CO3 |
+| 25 | Sentence Embeddings using BERT and GPT-2 | `25_sentence_embeddings` | `sentence_embeddings.py` | CO3 |
+| 26 | Text Generation using GPT-2 on a Custom Dataset | `26_gpt2_text_generation` | `gpt2_generate.py` (+ `data/custom_corpus.txt`) | CO3 |
+| 27 | Named Entity Recognition using Transformers (BERT) | `27_bert_ner` | `bert_ner.py` | CO3 |
+| 28 | Machine Translation using MarianMT (Hugging Face) | `28_machine_translation` | `translate_marian.py` | CO3 |
+| 29 | Text Summarization using BART | `29_text_summarization` | `summarize_bart.py` | CO3 |
+| 30 | Chatbot using Pre-trained Transformer (DialoGPT) | `30_chatbot` | `dialogpt_chatbot.py` | CO3 |
+| 31 | Automatic Document Classification and Separation using ML | `31_document_classification_separation` | `doc_classify_separate.py` | CO3 |
+| 32 | Hybrid Probabilistic + FSM-Based Sequence Modeling for Document Boundary Detection | `32_hybrid_fsm_boundary_detection` | `hybrid_fsm_boundary.py` | CO3 |
 
 ---
 
@@ -62,6 +83,9 @@ nlp-unit1-programs/
 ├── 06_named_entity_recognition/
 │   └── ner_spacy.py
 ├── CO2/
+│   ├── 07_coreference_resolution/
+│   │   ├── coreference_resolution.py
+│   │   └── outputs/output.txt
 │   ├── 08_bag_of_words/
 │   │   └── bag_of_words.py
 │   ├── 09_tfidf/
@@ -89,8 +113,28 @@ nlp-unit1-programs/
 │   │   └── sample_reviews.csv
 │   ├── 20_information_extraction/
 │   │   └── information_extraction.py
-│   └── 21_information_retrieval/
-│       └── information_retrieval.py
+│   ├── 21_information_retrieval/
+│   │   └── information_retrieval.py
+│   ├── 22_lstm_sequence_classification/
+│   │   └── lstm_classifier.py
+│   └── 23_attention_mechanism/
+│       └── attention_model.py
+├── CO3/
+│   ├── 24_bert_finetuning/bert_finetune.py
+│   ├── 25_sentence_embeddings/sentence_embeddings.py
+│   ├── 26_gpt2_text_generation/
+│   │   ├── data/custom_corpus.txt
+│   │   └── gpt2_generate.py
+│   ├── 27_bert_ner/bert_ner.py
+│   ├── 28_machine_translation/translate_marian.py
+│   ├── 29_text_summarization/summarize_bart.py
+│   ├── 30_chatbot/dialogpt_chatbot.py
+│   ├── 31_document_classification_separation/
+│   │   ├── doc_classify_separate.py
+│   │   └── outputs/output.txt
+│   └── 32_hybrid_fsm_boundary_detection/
+│       ├── hybrid_fsm_boundary.py
+│       └── outputs/output.txt
 ├── requirements.txt
 └── README.md
 ```
@@ -120,6 +164,8 @@ python -m spacy download en_core_web_sm
 python 01_tokenization/tokenization_nltk_spacy.py
 python CO2/09_tfidf/tfidf.py
 python CO2/21_information_retrieval/information_retrieval.py --interactive
+python CO2/07_coreference_resolution/coreference_resolution.py
+python CO3/31_document_classification_separation/doc_classify_separate.py
 ```
 
 Every program is self-contained and prints clearly labelled output (PART A, PART B, …).
@@ -127,6 +173,9 @@ Every program is self-contained and prints clearly labelled output (PART A, PART
 ---
 
 ## CO2 program details
+
+### 7. Coreference resolution
+`neuralcoref` only supports spaCy 2 / Python ≤ 3.7, so the program first tries **fastcoref** (its modern neural successor) and always runs a **rule-based resolver** (nearest antecedent with gender/number agreement, a binding rule and salience ranking). Prints mentions, pronoun→antecedent links, clusters and the resolved text. Output saved in `outputs/output.txt`.
 
 ### 8. Bag-of-Words
 Builds a BoW matrix from scratch and with `CountVectorizer`, verifies that both are identical, and shows binary BoW, stop-word removal, sparsity and how to vectorize an unseen sentence.
@@ -170,6 +219,50 @@ Extracts information from **structured** data (CSV, JSON) and **unstructured** t
 ### 21. Information retrieval system
 Builds a search engine with pre-processing, an **inverted index** and **TF-IDF cosine ranking**, cross-checks the ranking with scikit-learn, evaluates it with Precision@k / Recall@k, and offers an interactive search mode.
 
+### 22. LSTM sequence classification
+Tokenizes and pads a built-in movie-review dataset and trains an Embedding → LSTM → Dense sentiment classifier in Keras.
+
+### 23. Attention mechanism
+A custom additive (Bahdanau-style) attention layer on top of a BiLSTM; prints per-word attention weights.
+
+---
+
+## CO3 program details
+
+### 24. Fine-tuning BERT
+Fine-tunes `bert-base-uncased` on an IMDB slice (1000 train / 300 test) with the Hugging Face `Trainer`; falls back to a toy dataset offline.
+
+### 25. Sentence embeddings (BERT & GPT-2)
+Mean-pooled sentence vectors from BERT and GPT-2, compared with a cosine-similarity matrix.
+
+### 26. GPT-2 text generation
+Fine-tunes GPT-2 for 3 epochs on `data/custom_corpus.txt`, then samples text with top-k / top-p.
+
+### 27. BERT NER
+Token-classification pipeline (`dslim/bert-base-NER`) with aggregated entity spans.
+
+### 28. Machine translation
+English → Hindi / French / German with MarianMT (`Helsinki-NLP/opus-mt-*`).
+
+### 29. Text summarization
+Abstractive summarization with `facebook/bart-large-cnn`.
+
+### 30. Chatbot
+Multi-turn chatbot with `microsoft/DialoGPT-medium`, keeping the chat history.
+
+### 31. Document classification and separation
+Synthetic multi-page batch (invoice / resume / news / legal): TF-IDF + Logistic Regression classify each page, and documents are separated where the class changes or TF-IDF similarity drops. Output in `outputs/output.txt`.
+
+### 32. Hybrid probabilistic + FSM boundary detection
+Page-level boundary probabilities from a classifier are fed into a finite-state machine (START / CONT states) to decide document boundaries. Output in `outputs/output.txt`.
+
+---
+
+## Notes on outputs
+
+- Programs 7, 31 and 32 need no downloads; their outputs are saved in `outputs/output.txt`.
+- Programs 24–30 download pre-trained models from Hugging Face on first run (internet and a few GB of disk needed). Save their console output with `python script.py > outputs/output.txt`.
+
 ---
 
 ## Requirements
@@ -180,5 +273,8 @@ Builds a search engine with pre-processing, an **inverted index** and **TF-IDF c
 - gensim >= 4.3, POT (for Word Mover's Distance)
 - textblob, vaderSentiment
 - matplotlib (optional – only for the Word2Vec plot)
+- tensorflow >= 2.15 (Programs 22–23)
+- torch, transformers, datasets, sentencepiece, sacremoses, accelerate (Programs 24–30)
+- fastcoref (optional, Program 7)
 
-> This repository is updated as new CO2 programs are completed in the course.
+> All 32 NLP Lab programs are complete.

@@ -1,0 +1,50 @@
+Input text:
+ Ruchika is a professor at NIET. She teaches Natural Language Processing. Rahul and Priya are her students. They submitted their programs on time. Rahul pushed his code to GitHub because he wanted it to be reviewed. Priya said the repository was clear and it was easy to follow. 
+
+======================================================================
+PART A: Neural coreference (fastcoref, successor of neuralcoref)
+======================================================================
+fastcoref not available (ModuleNotFoundError). Install with `pip install fastcoref` to run the neural model.
+Continuing with the rule-based resolver below.
+
+======================================================================
+PART B: Rule-based coreference resolution
+======================================================================
+Candidate mentions:
+  [ 0] Ruchika              gender=f   number=sg
+  [ 3] a professor          gender=n   number=sg
+  [ 5] NIET                 gender=n   number=sg
+  [ 9] Natural              gender=n   number=sg
+  [10] Language             gender=n   number=sg
+  [11] Processing           gender=n   number=sg
+  [13] Rahul and Priya      gender=any number=pl
+  [13] Rahul                gender=m   number=sg
+  [15] Priya                gender=f   number=sg
+  [23] programs             gender=n   number=pl
+  [27] Rahul                gender=m   number=sg
+  [30] code                 gender=n   number=sg
+  [32] GitHub               gender=n   number=sg
+  [41] Priya                gender=f   number=sg
+  [44] the repository       gender=n   number=sg
+
+Pronoun -> antecedent links:
+  [ 7] She      -> Ruchika
+  [17] her      -> Ruchika
+  [20] They     -> Rahul and Priya
+  [22] their    -> Rahul and Priya
+  [29] his      -> Rahul
+  [34] he       -> Rahul
+  [36] it       -> code
+  [48] it       -> the repository
+
+Coreference clusters:
+  Ruchika: ['Ruchika', 'She', 'her']
+  Rahul and Priya: ['Rahul and Priya', 'They', 'their']
+  Rahul: ['Rahul', 'his', 'he']
+  code: ['code', 'it']
+  the repository: ['the repository', 'it']
+
+======================================================================
+PART C: Resolved text (pronouns replaced)
+======================================================================
+Ruchika is a professor at NIET. Ruchika teaches Natural Language Processing. Rahul and Priya are Ruchika's students. Rahul and Priya submitted Rahul and Priya's programs on time. Rahul pushed Rahul's code to GitHub because Rahul wanted code to be reviewed. Priya said the repository was clear and the repository was easy to follow.

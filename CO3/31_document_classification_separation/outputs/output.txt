@@ -1,0 +1,48 @@
+=== Page classification (hold-out) ===
+              precision    recall  f1-score   support
+
+     invoice      1.000     1.000     1.000        18
+       legal      1.000     1.000     1.000        22
+        news      1.000     1.000     1.000        28
+      resume      1.000     1.000     1.000        13
+
+    accuracy                          1.000        81
+   macro avg      1.000     1.000     1.000        81
+weighted avg      1.000     1.000     1.000        81
+
+=== Document separation ===
+Pages in stream: 20 | true documents: 8
+Boundary precision=1.00 recall=0.75 F1=0.86
+
+
+--- Document 1 (predicted class: invoice) ---
+  page 01  pred=invoice  true=invoice
+  page 02  pred=invoice  true=invoice
+  page 03  pred=invoice  true=invoice
+  page 04  pred=invoice  true=invoice
+  page 05  pred=invoice  true=invoice
+  page 06  pred=invoice  true=invoice
+
+--- Document 2 (predicted class: resume) ---
+  page 07  pred=resume   true=resume
+  page 08  pred=resume   true=resume
+  page 09  pred=resume   true=resume
+
+--- Document 3 (predicted class: news) ---
+  page 10  pred=news     true=news
+  page 11  pred=news     true=news
+
+--- Document 4 (predicted class: legal) ---
+  page 12  pred=legal    true=legal
+  page 13  pred=legal    true=legal
+  page 14  pred=legal    true=legal
+  page 15  pred=legal    true=legal
+  page 16  pred=legal    true=legal
+
+--- Document 5 (predicted class: invoice) ---
+  page 17  pred=invoice  true=invoice
+  page 18  pred=invoice  true=invoice
+
+--- Document 6 (predicted class: news) ---
+  page 19  pred=news     true=news
+  page 20  pred=news     true=news
